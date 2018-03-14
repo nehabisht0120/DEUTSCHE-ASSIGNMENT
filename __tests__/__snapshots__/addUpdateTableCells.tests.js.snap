@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it should fill  coloumns value with for every unique stomp update 1`] = `"<td>gbpeur</td><td>1.28</td><td>1.33</td><td>1.27</td><td>1.30</td><td>0.02</td><td>0.01</td>"`;
+
+exports[`it should fill coloumns in correct row of the table 1`] = `"<td>gbpeur</td><td>1.28</td><td>1.33</td><td>1.27</td><td>1.30</td><td>0.02</td><td>0.01</td>"`;
+
+exports[`it should fill the coloumns in row with the latest updates 1`] = `
+<table
+  id="stomp-table"
+>
+  <tbody>
+    <tr>
+      <th>
+        name
+      </th>
+      <th>
+        bestBid
+      </th>
+      <th>
+        bestAsk
+      </th>
+      <th>
+        openBid
+      </th>
+      <th>
+        openAsk
+      </th>
+      <th>
+        lastChangeAsk
+      </th>
+      <th>
+        lastChangeBid
+      </th>
+      <th>
+        SparkLines
+      </th>
+    </tr>
+     
+    <tr
+      id="gbpeur"
+    >
+      <td>
+        gbpeur
+      </td>
+      <td>
+        1.28
+      </td>
+      <td>
+        1.33
+      </td>
+      <td>
+        1.27
+      </td>
+      <td>
+        1.30
+      </td>
+      <td>
+        0.02
+      </td>
+      <td>
+        0.01
+      </td>
+    </tr>
+    <tr
+      id="euswq"
+    >
+      <td>
+        euswq
+      </td>
+      <td>
+        3.00
+      </td>
+      <td>
+        2.00
+      </td>
+      <td>
+        4.00
+      </td>
+      <td>
+        1.30
+      </td>
+      <td>
+        0.02
+      </td>
+      <td>
+        0.01
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

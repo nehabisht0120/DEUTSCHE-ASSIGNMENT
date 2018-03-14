@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <!--
+    This is the library that provides websocket streaming pub/sub
+    The dev serverver is serving the html and javascript, but it also provides updating fx data on /fx/prices.
+     -->
+    <script src="stomp.js"></script>
+    <script src="sparkline.js"></script>
+</head>
+
+<body>
+
+    <!-- This is a description of what you should do for this task.  You can remove it for your answer -->
+    <section class="content">
+        <h1>Assignment</h1>
+        <table id="stomp-table">
+            <tr>
+                <th>name</th>
+                <th>bestBid</th>
+                <th>bestAsk</th>
+                <th>openBid</th>
+                <th>openAsk</th>
+                <th>lastChangeAsk</th>
+                <th>lastChangeBid</th>
+                <th>SparkLines</th>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <ul>
+            <li>Above displayed is the stomp data driven table </li>
+            <li>So here goes the approach:
+                <p>1. so for every unique stomp update a new row was added in the table</p>
+                <p>2. for every new update the present row data was updated accordingly</p>
+                <p>3. and sparklines were created by calculating mid prices of the last recent 30 entries , Assumption was every
+                    update was received with lag of 1 second </p>
+                <p> 4. After all the operations were done the table was sorted by "last changed bid" amount</p>
+            </li>
+            <li>Jest testing framework has been used for writing unit tests
+            </li>
+        </ul>
+    </section>
+
+    <!-- Code you write in index.js and anything it depends on will be bundled into bundle.js and
+     is included here -->
+    <script src="bundle.js"></script>
+
+</body>
+
+</html>
